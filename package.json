@@ -1,6 +1,6 @@
 {
   "name": "file-n-functions",
-  "version": "0.0.12",
+  "version": "0.0.121",
   "description": "A cli app for creating a file and declaring functions, to quickly get up and running.",
   "main": "index.ts",
   "scripts": {
@@ -8,7 +8,7 @@
     "postinstall": "chmod +x bin/cli.js"
   },
   "bin": {
-    "file-n-functions": "./cli.js"
+    "fnf": "./cli.js"
   },
   "author": "Mohamed Abdulnassir",
   "license": "ISC",
