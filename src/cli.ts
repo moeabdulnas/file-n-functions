@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const fs = require("fs");
 const readline = require("readline");
-const figlet = require('figlet');
 
 interface parsedInput {
   filename: string;

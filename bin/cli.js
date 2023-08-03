@@ -2,7 +2,6 @@
 "use strict";
 const fs = require("fs");
 const readline = require("readline");
-const figlet = require('figlet');
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,

@@ -1,6 +1,6 @@
 {
-  "name": "fs-functions",
-  "version": "1.0.0",
+  "name": "file-n-functions",
+  "version": "0.0.12",
   "description": "A cli app for creating a file and declaring functions, to quickly get up and running.",
   "main": "index.ts",
   "scripts": {
@@ -8,7 +8,7 @@
     "postinstall": "chmod +x bin/cli.js"
   },
   "bin": {
-    "fs-functions": "./cli.js"
+    "file-n-functions": "./cli.js"
   },
   "author": "Mohamed Abdulnassir",
   "license": "ISC",
