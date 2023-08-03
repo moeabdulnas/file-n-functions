@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "build": "tsc",
-    "postinstall": "node postinstall.js"
+    "postinstall": "chmod +x bin/cli.js"
   },
   "bin": {
     "fs-functions": "./cli.js"
