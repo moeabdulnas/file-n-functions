@@ -2,24 +2,28 @@
 "use strict";
 const fs = require("fs");
 const readline = require("readline");
+const figlet = require('figlet');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
 function runCli() {
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout,
-    });
     rl.question("Create file and functions: ", (input) => {
         const parsedInputs = parseInput(input);
-        // TODO: fix to ask ag ain
-        if (!parsedInputs)
-            return console.log("Invalid input. Write at least a filename and at least one function namme, each seperated with empty space.");
+        // TODO: fix to ask again
+        if (!parsedInputs) {
+            console.log("Invalid input. Write at least a filename and at least one function namme, each seperated with empty space.");
+            runCli();
+            return;
+        }
         let { filename, functions } = parsedInputs;
         filename = validFileExtenstion(filename);
         const generatedFunctions = functionGenerator(functions);
         functions.forEach((funcName) => {
-            console.log(funcName);
             fs.writeFileSync(filename, generatedFunctions.next().value, {
                 flag: "a",
             });
+            console.log(`Declared function ${funcName} in ${filename}.`);
         });
         rl.close();
     });
