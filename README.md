@@ -42,5 +42,6 @@ This project is licensed under the MIT License.
 ## Contributing
 Contributions are welcome! Feel free to open issues and submit pull requests.
 
-## Project link
+## Project links
 https://github.com/moeabdulnas/file-n-functions
+https://www.npmjs.com/package/file-n-functions
