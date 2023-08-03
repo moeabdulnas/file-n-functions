@@ -1,10 +1,11 @@
 {
   "name": "fs-functions",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A cli app for creating a file and declaring functions, to quickly get up and running.",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "postinstall": "node postinstall.js"
   },
   "bin": {
     "fs-functions": "./cli.js"
