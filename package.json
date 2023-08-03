@@ -1,0 +1,18 @@
+{
+  "name": "fs-functions",
+  "version": "0.0.1",
+  "description": "A cli app for creating a file and declaring functions, to quickly get up and running.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "prettier": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "typescript": "^5.1.6"
+  }
+}
